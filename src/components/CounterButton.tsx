@@ -6,6 +6,7 @@ import { incrementCounter } from "../actions/countersActions";
 import { counterSelector } from "../reducers/countersSelectors";
 
 const { Button } = require("material-ui");
+const CounterMessage = require("./CounterMessage").default;
 const styles = require("./CounterButton.scss");
 
 interface IProps {
@@ -21,7 +22,7 @@ function CounterButton(props: IProps) {
             onClick={() => props.incrementCounter()}
             raised={true}
         >
-            Clicked {props.counter} times.
+            <CounterMessage counter={props.counter} />
         </Button>
     );
 }

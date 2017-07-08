@@ -3,6 +3,7 @@
   "rules": {
     "eofline": false,
     "jsx-no-lambda": false,
+    "member-ordering": [false],
     "no-trailing-whitespace": false,
     "no-var-requires": false
   }

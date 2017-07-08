@@ -19,8 +19,17 @@ module.exports = {
           path.resolve(__dirname, 'src'),
         ],
         use: [
-          'react-hot-loader/webpack',
+          'babel-loader',
           'awesome-typescript-loader',
+        ],
+      },
+      {
+        test: /\.jsx?$/,
+        include: [
+          path.resolve(__dirname, 'src'),
+        ],
+        use: [
+          'babel-loader',
         ],
       },
       {
@@ -61,7 +70,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
-  devtool: 'eval-source-map',
+  devtool: 'cheap-module-eval-source-map',
   devServer: {
     port: 8081,
     hot: true,

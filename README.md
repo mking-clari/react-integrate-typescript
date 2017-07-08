@@ -1,13 +1,14 @@
 TODO
 --- 
-- Store hot reloading warning
-- typescript + babel 
 - Rebuild time performance testing
 - Integrate with javascript reducers
-- Integrate with javascript components
+- Integrate with eslint
+- preserving stacktraces within promises
 
 Highlights
 ---
+- typescript stacktraces
+- typescript + babel
 - typescript + react 
 - typescript + react hot reloading 
 - typescript + css modules
@@ -28,6 +29,8 @@ Resources
 - https://palantir.github.io/tslint/rules/
 - https://material-ui-1dab0.firebaseapp.com/getting-started/installation
 - https://github.com/reactjs/react-redux/releases/tag/v2.0.0
+- https://github.com/gaearon/react-hot-loader/tree/master/docs#migration-to-30
+- https://github.com/gaearon/react-hot-boilerplate
 
 vscode settings.json
 
