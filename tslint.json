@@ -1,0 +1,9 @@
+{
+  "extends": ["tslint:latest", "tslint-react"],
+  "rules": {
+    "eofline": false,
+    "jsx-no-lambda": false,
+    "no-trailing-whitespace": false,
+    "no-var-requires": false
+  }
+}
