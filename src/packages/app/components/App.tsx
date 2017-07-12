@@ -1,6 +1,6 @@
+import { CounterButton } from "counter";
 import * as React from "react";
 import { Provider } from "react-redux";
-import CounterButton from "./CounterButton";
 
 const EventListener = require("react-event-listener").default;
 const { MuiThemeProvider } = require("material-ui");

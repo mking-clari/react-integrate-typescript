@@ -10,6 +10,7 @@ export default function reducer(
 ) {
     switch (action.type) {
         case ActionTypes.IncrementCounter: {
+            // Test hot reloading the store
             return state.update("counter", (counter) => counter + 1);
         }
 

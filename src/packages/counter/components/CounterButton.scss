@@ -1,0 +1,6 @@
+@import '../../common/common';
+
+:local(.button) {
+  // Test hot reloading css
+  width: 100px;
+}

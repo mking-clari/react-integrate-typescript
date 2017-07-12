@@ -6,7 +6,7 @@ module.exports = {
   entry: [
     'babel-polyfill',
     'react-hot-loader/patch',
-    path.resolve(__dirname, 'src/entrypoint'),
+    path.resolve(__dirname, 'src/packages/app/entrypoint'),
   ],
   output: {
     publicPath: '/static/',
@@ -69,6 +69,7 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    modules: ['packages', 'node_modules'],
   },
   devtool: 'cheap-module-eval-source-map',
   devServer: {

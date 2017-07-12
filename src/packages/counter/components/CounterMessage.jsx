@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Test hot reloading JavaScript component
 export default function CounterMessage(props) {
   return (
     <span className={props.className}>

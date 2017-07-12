@@ -3,7 +3,7 @@ import thunk from "redux-thunk";
 
 function createRootReducer() {
     return combineReducers({
-        counters: require("../reducers/countersReducer").default,
+        counter: require("counter").reducer,
     });
 }
 
@@ -17,7 +17,7 @@ export default function configureStore() {
     );
 
     if (module.hot) {
-        module.hot.accept("../reducers/countersReducer", () => {
+        module.hot.accept("counter", () => {
             store.replaceReducer(createRootReducer());
         });
     }

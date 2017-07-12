@@ -2,8 +2,8 @@ import * as classNames from "classnames";
 import * as React from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
-import { incrementCounter } from "../actions/countersActions";
-import { counterSelector } from "../reducers/countersSelectors";
+import { incrementCounter } from "../actions/counterActions";
+import { counterSelector } from "../reducers/counterSelectors";
 
 const { Button } = require("material-ui");
 const CounterMessage = require("./CounterMessage").default;
@@ -15,6 +15,7 @@ interface IProps {
     incrementCounter(): void;
 }
 
+// Test hot reloading TypeScript component
 function CounterButton(props: IProps) {
     return (
         <Button
