@@ -13,7 +13,7 @@ export default function reducer(
             // throw new Error("reducer error");
 
             // Test hot reloading the store
-            // return state.update("counter", (counter) => counter + 1);
+            return state.update("counter", (counter) => counter + 1);
         }
 
         default: {

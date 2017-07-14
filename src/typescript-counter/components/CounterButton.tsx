@@ -15,7 +15,6 @@ interface IProps {
     incrementCounter(): void;
 }
 
-// Test hot reloading component
 function CounterButton(props: IProps) {
     return (
         <Button

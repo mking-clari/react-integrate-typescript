@@ -7,7 +7,6 @@ import { incrementCounter } from '../actions/counterActions';
 import React from 'react';
 import styles from './CounterButton.scss';
 
-// Test hot reloading component
 function CounterButton(props) {
   return (
     <Button

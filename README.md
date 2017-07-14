@@ -1,23 +1,17 @@
-TODO
---- 
-- Rebuild time performance testing
-- Integrate with eslint
-- preserving stacktraces within promises
-
 Highlights
 ---
-- typescript stacktraces
-- typescript + babel
-- typescript + react 
-- typescript + react hot reloading 
-- typescript + css modules
-- typescript + css hot reloading 
-- typescript + redux 
-- typescript + redux hot reloading 
-- typescript + immutable
-- tslint
-- Using javascript modules in typescript
-- Using typescript modules in javascript
+- Hot reloading JavaScript component
+- Hot reloading TypeScript component
+- Hot reloading CSS
+- Hot reloading JavaScript component used in TypeScript component
+- Hot reloading JavaScript reducer
+- Hot reloading TypeScript reducer
+- TypeScript stacktraces in synchronous code
+- TypeScript stacktraces in Promises
+- Using Babel to compile ES6 to ES5 (this is for react-hot-loader)
+- Large TypeScript codebase (see generateTree.js)
+- Using ESLint on JavaScript code
+- Using TSLint on TypeScript code
 
 Resources
 ---
@@ -34,8 +28,8 @@ Resources
 - https://github.com/gaearon/react-hot-loader/tree/master/docs#migration-to-30
 - https://github.com/gaearon/react-hot-boilerplate
 
-vscode settings.json
-
+VSCode Settings
+---
 ```
 {
     "[typescript]": {
