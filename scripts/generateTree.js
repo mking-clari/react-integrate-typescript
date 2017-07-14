@@ -37,7 +37,10 @@ function createNode(nodeIds) {
   }))
     .to(path.resolve(out, `components/${node.get('name')}.${reactExtension}`));
 
-  shell.cp(path.resolve(templates, 'Node.scss'), path.resolve(out, `components/${node.get('name')}.scss`));
+  shell.echo(executeTemplate(shell.cat(path.resolve(templates, 'Node.scss.hbs')), {
+    node: node.toJS(),
+  }))
+    .to(path.resolve(out, `components/${node.get('name')}.scss`));
 
   childIds.forEach(id => createNode(nodeIds.push(id)));
 }
