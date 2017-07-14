@@ -6,7 +6,7 @@ module.exports = {
   entry: [
     'babel-polyfill',
     'react-hot-loader/patch',
-    path.resolve(__dirname, 'src/packages/app/entrypoint'),
+    path.resolve(__dirname, 'src/app/entrypoint'),
   ],
   output: {
     publicPath: '/static/',
@@ -41,7 +41,13 @@ module.exports = {
         ],
         use: [
           'style-loader',
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              localIdentName: '[name]-[local]',
+            },
+          },
           {
             loader: 'postcss-loader',
             options: {
@@ -55,7 +61,7 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
-    modules: ['packages', 'node_modules'],
+    modules: ['src', 'node_modules'],
   },
   devtool: 'cheap-module-eval-source-map',
   devServer: {

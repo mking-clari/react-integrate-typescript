@@ -7,6 +7,7 @@ const { CounterButton: JavaScriptCounterButton } = require("javascript-counter")
 const EventListener = require("react-event-listener").default;
 const { List, ListItem, MuiThemeProvider } = require("material-ui");
 const printLongStackTrace = require("print-long-stack-trace").default;
+const { Tree } = require("tree");
 
 interface IProps {
     className?: string;
@@ -37,6 +38,9 @@ export default class App extends React.Component<IProps> {
                                 </ListItem>
                                 <ListItem>
                                     <JavaScriptCounterButton />
+                                </ListItem>
+                                <ListItem>
+                                    <Tree />
                                 </ListItem>
                             </List>
                             <EventListener

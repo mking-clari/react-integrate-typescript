@@ -1,0 +1,18 @@
+import classNames from 'classnames';
+{{#each node.children}}
+import {{name}} from './{{name}}';
+{{/each}}
+import React from 'react';
+import styles from './{{node.name}}.scss';
+
+export default function {{node.name}}({
+  className,
+}) {
+  return (
+    <div className={classNames(styles.node, className)}>
+      {{#each node.children}}
+      <{{name}} />
+      {{/each}}
+    </div>
+  );
+}
