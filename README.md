@@ -1,7 +1,6 @@
 TODO
 --- 
 - Rebuild time performance testing
-- Integrate with javascript reducers
 - Integrate with eslint
 - preserving stacktraces within promises
 
@@ -22,6 +21,9 @@ Highlights
 
 Resources
 ---
+- https://github.com/webpack/webpack/issues/2145
+- https://github.com/Microsoft/TypeScript/issues/8392
+- https://gist.github.com/markerikson/dc6cee36b5b6f8d718f2e24a249e0491
 - https://webpack.js.org/configuration/
 - https://www.typescriptlang.org/docs/handbook/react-&-webpack.html
 - https://github.com/palantir/tslint-react

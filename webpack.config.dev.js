@@ -19,6 +19,7 @@ module.exports = {
           path.resolve(__dirname, 'src'),
         ],
         use: [
+          'source-map-loader',
           'babel-loader',
           'awesome-typescript-loader',
         ],
@@ -30,23 +31,8 @@ module.exports = {
         ],
         use: [
           'babel-loader',
+          'eslint-loader',
         ],
-      },
-      {
-        enforce: 'pre',
-        test: /\.js$/,
-        include: [
-          path.resolve(__dirname, 'src'),
-        ],
-        loader: 'source-map-loader',
-      },
-      {
-        enforce: 'pre',
-        test: /\.tsx?$/,
-        include: [
-          path.resolve(__dirname, 'src'),
-        ],
-        loader: 'tslint-loader',
       },
       {
         test: /\.(css|scss)$/,

@@ -15,7 +15,7 @@ interface IProps {
     incrementCounter(): void;
 }
 
-// Test hot reloading TypeScript component
+// Test hot reloading component
 function CounterButton(props: IProps) {
     return (
         <Button
@@ -29,7 +29,7 @@ function CounterButton(props: IProps) {
 }
 
 const selector = createStructuredSelector({
-  counter: counterSelector,
+    counter: counterSelector,
 });
 
 export default connect(selector, {
