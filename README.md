@@ -1,3 +1,9 @@
+TODO
+---
+- Improve rebuild time with CommonChunksPlugin
+- Add a large set of dependencies
+- Analyze bundle size
+
 Highlights
 ---
 - Hot reloading JavaScript component
@@ -15,6 +21,8 @@ Highlights
 
 Resources
 ---
+- https://github.com/zalmoxisus/redux-devtools-extension/blob/master/docs/API/Arguments.md#shouldhotreload
+- https://github.com/react-boilerplate/react-boilerplate/pull/495
 - https://github.com/webpack/webpack/issues/2145
 - https://github.com/Microsoft/TypeScript/issues/8392
 - https://gist.github.com/markerikson/dc6cee36b5b6f8d718f2e24a249e0491

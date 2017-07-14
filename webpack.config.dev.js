@@ -61,7 +61,7 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
-    modules: ['src', 'node_modules'],
+    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
   },
   devtool: 'cheap-module-eval-source-map',
   devServer: {
